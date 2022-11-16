@@ -1,0 +1,140 @@
+/* HEADER */
+
+.header {
+	align-items: center;
+	backdrop-filter: blur(10px);
+	background-color: #fdf2e9b6;
+	display: flex;
+	height: 10rem;
+	justify-content: space-between;
+	padding: 0 10rem;
+	position: fixed;
+	text-transform: uppercase;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.logo {
+	align-items: center;
+	display: flex;
+	text-decoration: none;
+}
+
+.logo-title {
+	color: #333;
+	display: inline-block;
+	font-size: 2.8rem;
+	font-weight: 600;
+	padding-left: 18px;
+	text-transform: uppercase;
+}
+
+.logo-image {
+	height: 12.2rem;
+}
+
+/* NAVIGATION */
+
+.main-nav-list {
+	align-items: center;
+	display: flex;
+	gap: 4.8rem;
+	list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+	color: #333;
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+	color: #cf711f;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: none;
+}
+
+.icon-mobile-nav {
+	color: #333;
+	height: 4.8rem;
+	width: 4.8rem;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+	display: none;
+}
+
+/* Discover */
+
+.section-discover {
+	padding: 14.6rem 0;
+}
+
+.discover-form input,
+.discover-form select {
+	background-color: #fdf2e9;
+	border-radius: 8px;
+	border: none;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: inherit;
+	font-family: inherit;
+	font-size: 1.8rem;
+	padding: 1.2rem;
+	width: 100%;
+}
+
+/* SongCard */
+
+.song {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 11px;
+	overflow: hidden;
+	transition: all 0.4s;
+}
+
+.song:hover {
+	cursor: pointer;
+	transform: translateY(-1rem);
+}
+
+.song-image {
+	max-width: 100%;
+}
+
+.song-content {
+	padding: 2rem;
+}
+
+.song-title,
+.song-artist {
+	color: #333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.song-title {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.song-artist {
+	font-size: 1.8rem;
+	font-style: italic;
+	font-weight: 400;
+}
